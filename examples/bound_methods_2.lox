@@ -1,0 +1,12 @@
+class Person {
+    say_name() {
+        println(this.name);
+    }
+}
+
+var jane = Person();
+jane.name = "Jane";
+jane.say_name();
+
+var method = jane.say_name;
+method();

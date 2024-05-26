@@ -1,0 +1,9 @@
+class Scone {
+    topping(first, second) {
+        println("scone with " + first + " and " + second);
+    }
+}
+
+var scone = Scone();
+var method = scone.topping;
+method("berries", "cream");

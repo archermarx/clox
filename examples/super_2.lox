@@ -1,0 +1,12 @@
+class A {
+    method() { println("A"); }
+}
+
+class B < A {
+    method() {
+        var closure = super.method;
+        closure(); // prints "A"
+    }
+}
+
+B().method(); // should print "A"

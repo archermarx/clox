@@ -1,0 +1,11 @@
+class Nested {
+    method() {
+        fun function() {
+            println(this);
+        }
+        function();
+    }
+}
+
+// should print "Nested instance"
+Nested().method();
